@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: rgb(15, 3, 3);
+  color: #333;
+  line-height: 1.6;
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color:rgb(58, 5, 5);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 3.2rem;
+  color: #4f9caf;
+}
+
+/* Form Styling */
+.student-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.student-form input {
+  padding: 13px;
+  background-color: #333;
+  color: wheat;
+  width: 800px;
+  margin-left: 180px;
+  border: 1px solid #080808;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.student-form input:focus {
+  outline: none;
+  border-color: #0478f3f3;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
+}
+
+.student-form button {
+  padding: 12px;
+  width: 250px;
+  margin-left:450px;
+  background-color: #061409;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.student-form button:hover {
+  background-color: #176428;
+}
+
+.error {
+  color: #dc3545;
+  font-size: 0.9rem;
+}
+
+/* Student List Styling */
+.student-list {
+  list-style: none;
+  padding: 0;
+}
+
+.student-list li {
+  padding: 20px;
+  width: 845px;
+  margin-left: 157px;
+  color: wheat;
+  background-color: #1d0603;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.student-list li p {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+.student-list button {
+  background-color: #061409;
+  color: wheat;
+  width: 250px;
+  margin-left: 550px;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  border: 1px solid black;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.student-list button.edit-btn {
+  background-color: #ffc107;
+  color: white;
+}
+
+.student-list button.edit-btn:hover {
+  background-color: #098f14;
+}
+
+.student-list button.delete-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.student-list button.delete-btn:hover {
+  background-color: #c82333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .app-container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .student-form input {
+    padding: 12px;
+  }
+
+  .student-form button {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .student-list li {
+    padding: 15px;
+  }
+
+  .student-list p {
+    font-size: 0.9rem;
+  }
+
+  .student-list button {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+  }
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .student-list li {
+    padding: 10px;
+  }
+
+  .student-form input, .student-form button {
+    padding: 10px;
+  }
+
+  .student-list button {
+    padding: 5px 8px;
+    font-size: 0.8rem;
+  }
+}
